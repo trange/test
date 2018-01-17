@@ -5,7 +5,6 @@ html, body{ height: 100%;  /* ブラウザ画面の高さをmaxで使用するという意味 */
 
 
 .logo{
-	positon:absolute;
 	top:0px;
 	left:10px;
 	}
