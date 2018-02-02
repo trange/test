@@ -1,17 +1,9 @@
-div{
-    height:100px;width:100px;
-    text-align:center;
-    line-height:100px;
+.abc{
+    width:400px;
+    height:300px;
 }
 
-.boxA{
-    background-color:silver;
-}
-
-.boxB{
-    background-color:aquamarine;
-}
-
-.boxC{
-    background-color:cornflowerblue;
+img{
+    width:400px;
+    height:300px;
 }
