@@ -1,0 +1,16 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		// Java練習
+		int a=20;
+		if(a<8){
+			System.out.println("A");
+		}else if(a==8){
+			System.out.println("B");
+		}else{
+			System.out.println("C");
+		}
+	}
+
+}

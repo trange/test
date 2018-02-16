@@ -1,0 +1,14 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		// Java練習
+		int a=50;
+		if(a>10){
+			if(a<30){
+				System.out.println("A");
+			}
+		}
+	}
+
+}
