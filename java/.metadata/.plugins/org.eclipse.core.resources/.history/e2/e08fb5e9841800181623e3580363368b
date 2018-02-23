@@ -1,0 +1,23 @@
+package jp.co.internous.action;
+
+public class Person {
+
+	String name = null;
+	private int age = 0;
+
+	public Person(String name, int age) {
+		// TODO 自動生成されたコンストラクター・スタブ
+	}
+	public String getName(){
+		return name;
+	}
+	public void setName(String name){
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+}
