@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="1" timestamp="1520855136861" analysisTimestamp="1520855121255" release="">
+  <Project projectName="WebProj2">
+    <Jar>C:\Users\testuser\Desktop\workspace\workspace-takahashi\test\WebProj\WebProj2\build\classes</Jar>
+    <AuxClasspathEntry>C:\Users\testuser\Desktop\workspace\workspace-takahashi\test\WebProj\WebProj2\build\classes</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\pleiades\tomcat\8\lib\annotations-api.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\pleiades\tomcat\8\lib\catalina-ant.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\pleiades\tomcat\8\lib\catalina-ha.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\pleiades\tomcat\8\lib\catalina-storeconfig.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\pleiades\tomcat\8\lib\catalina-tribes.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\pleiades\tomcat\8\lib\catalina.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\pleiades\tomcat\8\lib\ecj-4.4.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\pleiades\tomcat\8\lib\el-api.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\pleiades\tomcat\8\lib\jasper-el.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\pleiades\tomcat\8\lib\jasper.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\pleiades\tomcat\8\lib\jsp-api.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\pleiades\tomcat\8\lib\servlet-api.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\pleiades\tomcat\8\lib\tomcat-api.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\pleiades\tomcat\8\lib\tomcat-coyote.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\pleiades\tomcat\8\lib\tomcat-dbcp.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\pleiades\tomcat\8\lib\tomcat-i18n-es.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\pleiades\tomcat\8\lib\tomcat-i18n-fr.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\pleiades\tomcat\8\lib\tomcat-i18n-ja.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\pleiades\tomcat\8\lib\tomcat-jdbc.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\pleiades\tomcat\8\lib\tomcat-jni.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\pleiades\tomcat\8\lib\tomcat-util-scan.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\pleiades\tomcat\8\lib\tomcat-util.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\pleiades\tomcat\8\lib\tomcat-websocket.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\pleiades\tomcat\8\lib\websocket-api.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\testuser\Desktop\workspace\workspace-takahashi\test\WebProj\WebProj2\WebContent\WEB-INF\lib\commons-fileupload-1.3.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\testuser\Desktop\workspace\workspace-takahashi\test\WebProj\WebProj2\WebContent\WEB-INF\lib\commons-io-2.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\testuser\Desktop\workspace\workspace-takahashi\test\WebProj\WebProj2\WebContent\WEB-INF\lib\commons-lang3-3.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\testuser\Desktop\workspace\workspace-takahashi\test\WebProj\WebProj2\WebContent\WEB-INF\lib\commons-logging-1.1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\testuser\Desktop\workspace\workspace-takahashi\test\WebProj\WebProj2\WebContent\WEB-INF\lib\freemarker-2.3.22.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\testuser\Desktop\workspace\workspace-takahashi\test\WebProj\WebProj2\WebContent\WEB-INF\lib\javassist-3.11.0.GA.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\testuser\Desktop\workspace\workspace-takahashi\test\WebProj\WebProj2\WebContent\WEB-INF\lib\mysql-connector-java-5.1.45-bin.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\testuser\Desktop\workspace\workspace-takahashi\test\WebProj\WebProj2\WebContent\WEB-INF\lib\ognl-3.0.21.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\testuser\Desktop\workspace\workspace-takahashi\test\WebProj\WebProj2\WebContent\WEB-INF\lib\struts2-core-2.3.34.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\testuser\Desktop\workspace\workspace-takahashi\test\WebProj\WebProj2\WebContent\WEB-INF\lib\xwork-core-2.3.34.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\pleiades\java\8\jre\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\testuser\Desktop\workspace\workspace-takahashi\test\WebProj\WebProj2\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="com.internousdev.webproj2.dao.HelloStrutsDAO">
+      <SourceLine classname="com.internousdev.webproj2.dao.HelloStrutsDAO" sourcefile="HelloStrutsDAO.java" sourcepath="com/internousdev/webproj2/dao/HelloStrutsDAO.java"/>
+    </Class>
+    <Method classname="com.internousdev.webproj2.dao.HelloStrutsDAO" name="select" signature="()Z" isStatic="false">
+      <SourceLine classname="com.internousdev.webproj2.dao.HelloStrutsDAO" start="12" end="30" startBytecode="0" endBytecode="304" sourcefile="HelloStrutsDAO.java" sourcepath="com/internousdev/webproj2/dao/HelloStrutsDAO.java"/>
+    </Method>
+    <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.ResultSet" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="com.internousdev.webproj2.dao.HelloStrutsDAO" start="18" end="18" startBytecode="31" endBytecode="31" sourcefile="HelloStrutsDAO.java" sourcepath="com/internousdev/webproj2/dao/HelloStrutsDAO.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="com.internousdev.webproj2.dao.HelloStrutsDAO" start="19" end="19" startBytecode="38" endBytecode="38" sourcefile="HelloStrutsDAO.java" sourcepath="com/internousdev/webproj2/dao/HelloStrutsDAO.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="com.internousdev.webproj2.dao.HelloStrutsDAO" start="26" end="26" startBytecode="60" endBytecode="60" sourcefile="HelloStrutsDAO.java" sourcepath="com/internousdev/webproj2/dao/HelloStrutsDAO.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="com.internousdev.webproj2.dao.HelloStrutsDAO" start="27" end="27" startBytecode="66" endBytecode="66" sourcefile="HelloStrutsDAO.java" sourcepath="com/internousdev/webproj2/dao/HelloStrutsDAO.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="com.internousdev.webproj2.dao.HelloStrutsDAO" start="30" end="30" startBytecode="76" endBytecode="76" sourcefile="HelloStrutsDAO.java" sourcepath="com/internousdev/webproj2/dao/HelloStrutsDAO.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="com.internousdev.webproj2.dao.HelloStrutsDAO">
+      <SourceLine classname="com.internousdev.webproj2.dao.HelloStrutsDAO" sourcefile="HelloStrutsDAO.java" sourcepath="com/internousdev/webproj2/dao/HelloStrutsDAO.java"/>
+    </Class>
+    <Method classname="com.internousdev.webproj2.dao.HelloStrutsDAO" name="select" signature="()Z" isStatic="false">
+      <SourceLine classname="com.internousdev.webproj2.dao.HelloStrutsDAO" start="12" end="30" startBytecode="0" endBytecode="304" sourcefile="HelloStrutsDAO.java" sourcepath="com/internousdev/webproj2/dao/HelloStrutsDAO.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="com.internousdev.webproj2.dao.HelloStrutsDAO" start="17" end="17" startBytecode="22" endBytecode="22" sourcefile="HelloStrutsDAO.java" sourcepath="com/internousdev/webproj2/dao/HelloStrutsDAO.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="com.internousdev.webproj2.dao.HelloStrutsDAO" start="18" end="18" startBytecode="29" endBytecode="29" sourcefile="HelloStrutsDAO.java" sourcepath="com/internousdev/webproj2/dao/HelloStrutsDAO.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="com.internousdev.webproj2.dao.HelloStrutsDAO" start="19" end="19" startBytecode="38" endBytecode="38" sourcefile="HelloStrutsDAO.java" sourcepath="com/internousdev/webproj2/dao/HelloStrutsDAO.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="com.internousdev.webproj2.dao.HelloStrutsDAO" start="26" end="26" startBytecode="60" endBytecode="60" sourcefile="HelloStrutsDAO.java" sourcepath="com/internousdev/webproj2/dao/HelloStrutsDAO.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="com.internousdev.webproj2.dao.HelloStrutsDAO" start="27" end="27" startBytecode="66" endBytecode="66" sourcefile="HelloStrutsDAO.java" sourcepath="com/internousdev/webproj2/dao/HelloStrutsDAO.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="com.internousdev.webproj2.dao.HelloStrutsDAO" start="30" end="30" startBytecode="76" endBytecode="76" sourcefile="HelloStrutsDAO.java" sourcepath="com/internousdev/webproj2/dao/HelloStrutsDAO.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" abbrev="ODR" category="BAD_PRACTICE" first="1">
+    <Class classname="com.internousdev.webproj2.dao.HelloStrutsDAO">
+      <SourceLine classname="com.internousdev.webproj2.dao.HelloStrutsDAO" sourcefile="HelloStrutsDAO.java" sourcepath="com/internousdev/webproj2/dao/HelloStrutsDAO.java"/>
+    </Class>
+    <Method classname="com.internousdev.webproj2.dao.HelloStrutsDAO" name="select" signature="()Z" isStatic="false">
+      <SourceLine classname="com.internousdev.webproj2.dao.HelloStrutsDAO" start="12" end="30" startBytecode="0" endBytecode="34" sourcefile="HelloStrutsDAO.java" sourcepath="com/internousdev/webproj2/dao/HelloStrutsDAO.java"/>
+    </Method>
+    <Type descriptor="Ljava/sql/PreparedStatement;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.sql.PreparedStatement" start="1265" end="1318" sourcefile="PreparedStatement.java" sourcepath="java/sql/PreparedStatement.java"/>
+    </Type>
+    <SourceLine classname="com.internousdev.webproj2.dao.HelloStrutsDAO" start="17" end="17" startBytecode="22" endBytecode="22" sourcefile="HelloStrutsDAO.java" sourcepath="com/internousdev/webproj2/dao/HelloStrutsDAO.java"/>
+    <SourceLine classname="com.internousdev.webproj2.dao.HelloStrutsDAO" start="17" end="17" startBytecode="22" endBytecode="22" sourcefile="HelloStrutsDAO.java" sourcepath="com/internousdev/webproj2/dao/HelloStrutsDAO.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 12 Mar 2018 20:39:20 +0900" total_classes="6" referenced_classes="40" total_bugs="3" total_size="54" num_packages="3" java_version="1.8.0_74" vm_version="25.74-b02" cpu_seconds="18.70" clock_seconds="15.63" peak_mbytes="869.17" alloc_mbytes="910.50" gc_seconds="0.63" priority_2="3">
+    <PackageStats package="com.internousdev.webproj2.action" total_bugs="0" total_types="2" total_size="13">
+      <ClassStats class="com.internousdev.webproj2.action.HelloStrutsAction" sourceFile="HelloStrutsAction.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.internousdev.webproj2.action.package-info" sourceFile="package-info.java" interface="true" size="1" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.internousdev.webproj2.dao" total_bugs="3" total_types="2" total_size="19" priority_2="3">
+      <ClassStats class="com.internousdev.webproj2.dao.HelloStrutsDAO" sourceFile="HelloStrutsDAO.java" interface="false" size="18" bugs="3" priority_2="3"/>
+      <ClassStats class="com.internousdev.webproj2.dao.package-info" sourceFile="package-info.java" interface="true" size="1" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.internousdev.webproj2.util" total_bugs="0" total_types="2" total_size="22">
+      <ClassStats class="com.internousdev.webproj2.util.DBConnector" sourceFile="DBConnector.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="com.internousdev.webproj2.util.package-info" sourceFile="package-info.java" interface="true" size="1" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="1006" invocations="2" avgMicrosecondsPerInvocation="503003" maxMicrosecondsPerInvocation="724196" standardDeviationMircosecondsPerInvocation="221193"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="505" invocations="412" avgMicrosecondsPerInvocation="1225" maxMicrosecondsPerInvocation="57790" standardDeviationMircosecondsPerInvocation="3911"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="342" invocations="135" avgMicrosecondsPerInvocation="2535" maxMicrosecondsPerInvocation="69229" standardDeviationMircosecondsPerInvocation="8673"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantPoolGenFactory" totalMilliseconds="296" invocations="6" avgMicrosecondsPerInvocation="49399" maxMicrosecondsPerInvocation="296090" standardDeviationMircosecondsPerInvocation="110323"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="153" invocations="40" avgMicrosecondsPerInvocation="3845" maxMicrosecondsPerInvocation="47014" standardDeviationMircosecondsPerInvocation="8358"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="151" invocations="40" avgMicrosecondsPerInvocation="3794" maxMicrosecondsPerInvocation="34687" standardDeviationMircosecondsPerInvocation="8208"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="119" invocations="417" avgMicrosecondsPerInvocation="286" maxMicrosecondsPerInvocation="10322" standardDeviationMircosecondsPerInvocation="544"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="118" invocations="40" avgMicrosecondsPerInvocation="2951" maxMicrosecondsPerInvocation="34651" standardDeviationMircosecondsPerInvocation="6965"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="116" invocations="40" avgMicrosecondsPerInvocation="2913" maxMicrosecondsPerInvocation="50298" standardDeviationMircosecondsPerInvocation="8687"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="111" invocations="8" avgMicrosecondsPerInvocation="13890" maxMicrosecondsPerInvocation="64307" standardDeviationMircosecondsPerInvocation="19967"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="109" invocations="64" avgMicrosecondsPerInvocation="1704" maxMicrosecondsPerInvocation="49183" standardDeviationMircosecondsPerInvocation="6450"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="98" invocations="7" avgMicrosecondsPerInvocation="14025" maxMicrosecondsPerInvocation="93684" standardDeviationMircosecondsPerInvocation="32535"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1520855136845" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>
