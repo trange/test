@@ -1,0 +1,8 @@
+127.0.0.1 - - [30/Mar/2018:20:27:45 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [30/Mar/2018:20:27:48 +0900] "GET /template/ HTTP/1.1" 200 1582
+0:0:0:0:0:0:0:1 - - [30/Mar/2018:20:27:54 +0900] "POST /template/HomeAction.action HTTP/1.1" 200 2160
+0:0:0:0:0:0:0:1 - - [30/Mar/2018:20:27:57 +0900] "GET /template/UserCreateAction.action HTTP/1.1" 200 2387
+0:0:0:0:0:0:0:1 - - [30/Mar/2018:20:28:06 +0900] "GET /template/HomeAction.action HTTP/1.1" 200 2160
+0:0:0:0:0:0:0:1 - - [30/Mar/2018:20:28:22 +0900] "POST /template/LoginAction.action HTTP/1.1" 200 18196
+0:0:0:0:0:0:0:1 - - [30/Mar/2018:20:28:29 +0900] "POST /template/LoginAction.action HTTP/1.1" 200 18194
+0:0:0:0:0:0:0:1 - - [30/Mar/2018:20:29:08 +0900] "POST /template/LoginAction.action HTTP/1.1" 200 18196

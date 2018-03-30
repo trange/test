@@ -1,0 +1,6 @@
+127.0.0.1 - - [30/Mar/2018:20:23:13 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [30/Mar/2018:20:23:14 +0900] "GET /template/ HTTP/1.1" 404 1037
+127.0.0.1 - - [30/Mar/2018:20:24:10 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [30/Mar/2018:20:24:13 +0900] "GET /template/ HTTP/1.1" 200 1626
+0:0:0:0:0:0:0:1 - - [30/Mar/2018:20:24:19 +0900] "POST /template/HomeAction.action;jsessionid=D92A0FD342FAFC72ACBBC0D4DBB0B6C8 HTTP/1.1" 200 2160
+0:0:0:0:0:0:0:1 - - [30/Mar/2018:20:24:30 +0900] "POST /template/LoginAction.action HTTP/1.1" 500 3672
