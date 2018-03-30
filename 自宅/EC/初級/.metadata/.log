@@ -3468,3 +3468,9 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280)
 	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382)
 	... 30 more
+
+!ENTRY org.eclipse.ui.navigator 4 0 2018-03-30 21:22:28.314
+!MESSAGE オブジェクト "<null>" の親パスに対するナビゲーター・コンテンツ拡張 (triggerPoints を使用) を検出できません : "P/Servers"。 navigatorContent triggerPoints 内のこのオブジェクトに対する式または使用可能性を確認してください。
+
+!ENTRY org.eclipse.ui.navigator 4 0 2018-03-30 21:22:28.325
+!MESSAGE オブジェクト "<null>" の親パスに対するナビゲーター・コンテンツ拡張 (triggerPoints を使用) を検出できません : "P/Servers"。 navigatorContent triggerPoints 内のこのオブジェクトに対する式または使用可能性を確認してください。
