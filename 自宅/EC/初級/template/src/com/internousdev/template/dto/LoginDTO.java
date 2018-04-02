@@ -33,4 +33,8 @@ public class LoginDTO {
 	public void setLoginflg(boolean loginFlg){
 		this.loginFlg=loginFlg;
 	}
+	public boolean getLoginFlg() {
+		// TODO 自動生成されたメソッド・スタブ
+		return false;
+	}
 }
