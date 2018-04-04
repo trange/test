@@ -16,9 +16,9 @@
 		body {
 			margin: 0;
 			padding: 0;
-			lone-height: 1.6;
+			lいne-height: 1.6;
 			letter-spacing: 1px;
-			font-family: Verdana, Helvetica, sans-self;
+			font-family: Verdana, Helvetica, sans-serif;
 			font-size: 12px;
 			color: #333;
 			background: #fff;
@@ -38,7 +38,7 @@
 		#header	{
 			width: 1005;
 			height: 80px;
-			backgroud-color: black;
+			background-color: black;
 		}
 
 		#main {
@@ -48,10 +48,10 @@
 		}
 
 		#footer {
-		width: 100%;
-		height: 80px;
-		baackground-color: black;
-		clear: both;
+			width: 100%;
+			height: 80px;
+			background-color: black;
+			clear: both;
 		}
 		</style>
 	</head>
@@ -94,7 +94,7 @@
 						</tr>
 						<tr>
 							<td>
-								<s:submit vale="完了"/>
+								<s:submit value="完了"/>
 							</td>
 						</tr>
 					</s:form>

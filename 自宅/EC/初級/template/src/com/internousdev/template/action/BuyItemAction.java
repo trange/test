@@ -29,7 +29,7 @@ public class BuyItemAction extends ActionSupport implements SessionAware{
 		}
 		return result;
 	}
-	public int getStiock(){
+	public int getStock(){
 		return stock;
 	}
 	public void setStock(int stock){

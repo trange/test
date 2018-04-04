@@ -27,14 +27,10 @@ public class LoginDTO {
 		this.userName=userName;
 	}
 
-	public boolean getLogFlg(){
+	public boolean getLoginFlg(){
 		return loginFlg;
 	}
-	public void setLoginflg(boolean loginFlg){
+	public void setLoginFlg(boolean loginFlg){
 		this.loginFlg=loginFlg;
-	}
-	public boolean getLoginFlg() {
-		// TODO 自動生成されたメソッド・スタブ
-		return false;
 	}
 }

@@ -28,7 +28,7 @@ public class LoginDAO {
 				loginDTO.setUserName(resultSet.getString("user_name"));
 
 				if(!(resultSet.getString("login_id").equals(null))){
-					loginDTO.setLoginflg(true);
+					loginDTO.setLoginFlg(true);
 				}
 			}
 		}catch(Exception e){
