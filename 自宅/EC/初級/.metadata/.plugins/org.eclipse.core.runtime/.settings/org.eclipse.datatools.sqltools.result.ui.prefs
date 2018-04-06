@@ -1,3 +1,2 @@
 eclipse.preferences.version=1
-org.eclipse.datatools.sqltools.result.ResultsFilterDialog.filtered.profiles=escite\u0001ecsite
-org.eclipse.datatools.sqltools.result.ResultsFilterDialog.profileFilter.change=true
+org.eclipse.datatools.sqltools.result.preferences.display.displaymode=1

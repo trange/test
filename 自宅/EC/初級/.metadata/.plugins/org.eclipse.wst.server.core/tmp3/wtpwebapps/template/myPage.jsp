@@ -51,7 +51,7 @@
 		</style>
 	</head>
 	<body>
-		<div id="geader">
+		<div id="header">
 			<div id="pr">
 			</div>
 		</div>
@@ -60,7 +60,7 @@
 				<p>MyPage</p>
 			</div>
 			<div>
-				<s:if test="session.massage == ">
+				<s:if test="session.message == ">
 					<h3>ご購入情報は以下になります。</h3>
 					<table>
 						<tr>
@@ -91,7 +91,7 @@
 						<s:submit value="削除" method="delete"/>
 					</s:form>
 				</s:if>
-				<s:if test="session.message !=null">
+				<s:if test="session.message != null">
 					<h3><s:property value="session.message"/></h3>
 				</s:if>
 				<div>

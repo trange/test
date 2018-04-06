@@ -5,6 +5,7 @@ import java.util.Map;
 
 import org.apache.struts2.interceptor.SessionAware;
 
+import com.internousdev.template.dao.MyPageDAO;
 import com.internousdev.template.dto.MyPageDTO;
 import com.opensymphony.xwork2.ActionSupport;
 
@@ -36,7 +37,7 @@ public class MyPageAction extends ActionSupport implements SessionAware{
 		String item_transaction_id=session.get("id").toString();
 		String user_master_id=session.get("login_user_id").toString();
 		int res=myPageDAO.buyItemHistoryDelete(item_transaction_id, user_master_id);
-		if(res>0){
+		if(res > 0){
 			session.put("message", "商品情報を正しく削除しました。");
 		}else if(res==0){
 			session.put("message", "商品情報の削除に失敗しました。");
