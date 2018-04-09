@@ -4,12 +4,12 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-		<meta http-equiv="Conntent-Style-Type" content="text/css"/>
+		<meta http-equiv="Content-Style-Type" content="text/css"/>
 		<meta http-equiv="Content-Script-Type" content="text/javascript"/>
 		<meta http-equiv="imagetoolbar" content="no"/>
 		<meta name="description" content=""/>
 		<meta name="keywords" content=""/>
-		<title>UsrCreateComplete画面</title>
+		<title>UserCreateComplete画面</title>
 
 		<style type="text/css">
 		/* ========TAG LAYOUT======== */
@@ -36,8 +36,8 @@
 		}
 		#header {
 			width: 100%;
-			height: 500px;
-			text-align: center;
+			height: 80px;
+			background-color: black;
 		}
 		#main {
 			width: 100%;
@@ -59,10 +59,10 @@
 		</div>
 		<div id="main">
 			<div id="top">
-				<p>UsrCreateComplete</p>
+				<p>UserCreateComplete</p>
 			</div>
 			<div>
-				<h3>ユーザーの登録が完了いたしました。</h3>
+				<h3>ユーザーの登録が完了致しました。</h3>
 				<div>
 					<a href='<s:url action="HomeAction"/>'>ログインへ</a>
 				</div>

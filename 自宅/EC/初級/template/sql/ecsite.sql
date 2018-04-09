@@ -16,6 +16,17 @@ insert_date datetime,
 updated_date datetime
 );
 
+drop table if exists master_user_transaction;
+
+create table master_user_transaction(
+id int not null primary key auto_increment,
+master_id varchar(16) unique,
+master_pass varchar(16),
+user_name varchar(50),
+insert_date datetime,
+updated_date datetime
+);
+
 drop table if exists item_info_transaction;
 
 create table item_info_transaction(
@@ -43,3 +54,5 @@ delete_date datetime
 INSERT INTO item_info_transaction(item_name,item_price,item_stock) VALUES("ノートBook",100,50);
 
 INSERT INTO login_user_transaction(login_id,login_pass,user_name) VALUES("internous","internous01","test");
+
+INSERT INTO master_user_transaction(master_id,master_pass,user_name) VALUES("internous","internous01","test");

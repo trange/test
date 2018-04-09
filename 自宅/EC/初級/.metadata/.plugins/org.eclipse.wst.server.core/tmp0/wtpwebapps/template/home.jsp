@@ -5,10 +5,11 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-		<meta http-equiv="Content-Style-Type" content="yext/css"/>
+		<meta http-equiv="Content-Style-Type" content="text/css"/>
 		<meta http-equiv="Content-Script-Type" content="text/javascript"/>
+		<meta http-equiv="imagetoolbar" content="no"/>
 		<meta name="description" content=""/>
-		<meta name="keyword" content=""/>
+		<meta name="keywords" content=""/>
 		<title>Home画面</title>
 
 		<style type="text/css">
@@ -17,7 +18,8 @@
 			margin: 0;
 			padding: 0;
 			line-height: 1.6;
-			letter-spacing: Verdana, Helvetica, sans-serif;
+			letter-spacing: 1px;
+			font-family: Verdana, Helvetica, sans-serif;
 			font-size: 12px;
 			color: #333;
 			background: #fff;
@@ -67,6 +69,12 @@
 			<div>
 				<s:form action="HomeAction">
 					<s:submit value="商品購入"/>
+				</s:form>
+			</div>
+
+			<div>
+				<s:form action="MasterAction">
+					<s:submit value="商品管理者"/>
 				</s:form>
 			</div>
 		</div>

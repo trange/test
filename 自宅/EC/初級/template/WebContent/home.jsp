@@ -71,6 +71,12 @@
 					<s:submit value="商品購入"/>
 				</s:form>
 			</div>
+
+			<div>
+				<s:form action="MasterAction">
+					<s:submit value="商品管理者"/>
+				</s:form>
+			</div>
 		</div>
 		<div id="footer">
 			<div id="pr">

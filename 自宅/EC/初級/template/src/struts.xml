@@ -13,6 +13,7 @@
 		<!-- Home Action -->
 		<action name="HomeAction" class="com.internousdev.template.action.HomeAction" method="execute">
 			<result name="success">login.jsp</result>
+			<result name="success">master.jsp</result>
 		</action>
 
 		<!-- LoginAction -->
@@ -62,6 +63,56 @@
 
 		<!--  LogoutAction -->
 		<action name="LogoutAction" class="com.internousdev.template.action.LogoutAction" method="execute">
+			<result name="success">home.jsp</result>
+		</action>
+
+		<!-- MasterAction -->
+		<action name="MasterAction" class="com.internousdev.template.action.MasterAction" method="execute">
+			<result name="success">createItem.jsp</result>
+			<result name="error">home.jsp</result>
+		</action>
+
+		<!-- MasterCreateAction -->
+		<action name="MasterCreateAction" class="com.internousdev.template.action.MasterCreateAction" method="execute">
+			<result name="success">masterCreate.jsp</result>
+			<result name="back">master.jsp</result>
+		</action>
+
+		<!-- MasterCreateConfirmAction -->
+		<action name="MasterCreateConfirmAction" class="com.internousdev.template.action.MasterCreateConfirmAction" method="execute">
+			<result name="success">masterCreateConfirm.jsp</result>
+			<result name="error">masterCreate.jsp</result>
+		</action>
+
+		<!-- MasterCreateCompleteAction -->
+		<action name="MasterCreateCompleteAction" class="com.internousdev.template.action.MasterCreateCompleteAction" method="execute">
+			<result name="success">masterCreateComplete.jsp</result>
+		</action>
+
+		<!-- CreateItemAction -->
+		<action name="CreateItemAction" class="com.internousdev.template.action.CreateItemAction" method="execute">
+			<result name="success">createItemConfirm.jsp</result>
+			<result name="error">createItem.jsp</result>
+		</action>
+
+		<!--  CreateItemConfirmAction -->
+		<action name="CreateItemConfirmAction" class="com.internousdev.template.action.CreateItemConfirmAction" method="execute">
+			<result name="success">createItemComplete.jsp</result>
+			<result name="back">createItem.jsp</result>
+		</action>
+
+		<!--  CreateItemCompleteAction -->
+		<action name="CreateItemCompleteAction" class="com.internousdev.template.action.CreateItemCompleteAction" method="execute">
+			<result name="success">home.jsp</result>
+		</action>
+
+		<!--  MasterPageAction -->
+		<action name="MasterPageAction" class="com.internousdev.template.action.MasterPageAction" method="execute">
+			<result name="success">masterPage.jsp</result>
+		</action>
+
+		<!--  MasterLogoutAction -->
+		<action name="MasterLogoutAction" class="com.internousdev.template.action.MasterLogoutAction" method="execute">
 			<result name="success">home.jsp</result>
 		</action>
 

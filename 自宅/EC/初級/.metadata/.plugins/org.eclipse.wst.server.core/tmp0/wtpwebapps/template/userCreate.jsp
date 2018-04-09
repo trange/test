@@ -8,7 +8,7 @@
 		<meta http-equiv="Content-Script-Type" content="text/javascript"/>
 		<meta http-equiv="imagetoolbar" content="no"/>
 		<meta name="description" content=""/>
-		<meta name="keyword" content=""/>
+		<meta name="keywords" content=""/>
 		<title>UserCreate画面</title>
 
 		<style type="text/css">
@@ -96,7 +96,7 @@
 					</s:form>
 				</table>
 				<div>
-					<span>前画面に戻るには</span>
+					<span>前画面に戻る場合は</span>
 					<a href='<s:url action="HomeAction" />'>こちら</a>
 				</div>
 			</div>
