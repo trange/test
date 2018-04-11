@@ -64,7 +64,7 @@
 			</div>
 			<div>
 				<h3>商品管理はこちらからログインをお願いします。</h3>
-				<s:form action="MasterAction">
+				<s:form action="MasterLoginAction">
 					<s:textfield name="masterUserId"/>
 					<s:password name="masterPassword"/>
 					<s:submit value="ログイン"/>

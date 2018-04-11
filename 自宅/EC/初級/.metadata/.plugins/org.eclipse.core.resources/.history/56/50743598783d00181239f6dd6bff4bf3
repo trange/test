@@ -17,7 +17,7 @@
 
 		<!-- MasterAction -->
 		<action name="MasterAction" class="com.internousdev.template.action.MasterAction" method="execute">
-			<result name="success">masterLogin.jsp</result>
+			<result name="success">master.jsp</result>
 		</action>
 
 		<!-- LoginAction -->
@@ -70,12 +70,6 @@
 		<action name="BuyItemAction" class="com.internousdev.template.action.BuyItemAction" method="execute">
 			<result name="success">buyItemConfirm.jsp</result>
 			<result name="error">buyItem.jsp</result>
-		</action>
-
-		<!-- CreateItemAction -->
-		<action name="CreateItemAction" class="com.internousdev.template.action.CreateItemAction" method="execute">
-			<result name="success">createItemConfirm.jsp</result>
-			<result name="error">createItem.jsp</result>
 		</action>
 
 		<!--  BuyItemConfirmAction -->
