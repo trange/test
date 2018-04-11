@@ -73,7 +73,7 @@
 			</div>
 
 			<div>
-				<s:form action="MasterAction">
+				<s:form action="MasterLoginAction">
 					<s:submit value="商品管理者"/>
 				</s:form>
 			</div>

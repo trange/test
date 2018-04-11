@@ -9,7 +9,7 @@
 		<meta http-equiv="imagetoolbar" content="no"/>
 		<meta name="description" content=""/>
 		<meta name="keywords" content=""/>
-		<title>UserCreateComplete画面</title>
+		<title>MasterCreateComplete画面</title>
 
 		<style type="text/css">
 		/* ========TAG LAYOUT======== */
@@ -64,7 +64,7 @@
 			<div>
 				<h3>管理者としての登録が完了致しました。</h3>
 				<div>
-					<a href='<s:url action="HomeAction"/>'>ログインへ</a>
+					<a href='<s:url action="MasterAction"/>'>ログインへ</a>
 				</div>
 			</div>
 		</div>

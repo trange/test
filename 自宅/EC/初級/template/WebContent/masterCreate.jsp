@@ -9,7 +9,7 @@
 		<meta http-equiv="imagetoolbar" content="no"/>
 		<meta name="description" content=""/>
 		<meta name="keywords" content=""/>
-		<title>UserCreate画面</title>
+		<title>MasterCreate画面</title>
 
 		<style type="text/css">
 		/* ========TAG LAYOUT======== */
@@ -60,7 +60,7 @@
 		</div>
 		<div id="main">
 			<div id="top">
-				<p>UserCreate</p>
+				<p>MasterCreate</p>
 			</div>
 			<div>
 				<s:if test="errorMassage !=">

@@ -9,7 +9,7 @@
 		<meta http-equiv="imagetoolbar" content="no"/>
 		<meta name="description" content=""/>
 		<meta name="keywords" content=""/>
-		<title>Login画面</title>
+		<title>Master画面</title>
 
 		<style type="text/css">
 		/* ========TAG LAYOUT======== */
@@ -60,7 +60,7 @@
 		</div>
 		<div id="main">
 			<div id="top">
-				<p>Login</p>
+				<p>Master</p>
 			</div>
 			<div>
 				<h3>商品管理はこちらからログインをお願いします。</h3>
