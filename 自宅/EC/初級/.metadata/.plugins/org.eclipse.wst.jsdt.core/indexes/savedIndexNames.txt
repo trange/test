@@ -2,7 +2,6 @@ INDEX VERSION 1.3+C:\Users\testuser\Desktop\workspace\workspace-takahashi\test\Ž
 4065279204.index
 2822292010.index
 202763631.index
-4170188757.index
 1438305336.index
 2150458918.index
 1991562360.index
