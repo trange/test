@@ -14,3 +14,15 @@
 0:0:0:0:0:0:0:1 - - [16/Apr/2018:20:22:04 +0900] "POST /EC/UserCreateCompleteAction.action HTTP/1.1" 200 1548
 0:0:0:0:0:0:0:1 - - [16/Apr/2018:20:22:06 +0900] "GET /EC/UserAction.action HTTP/1.1" 200 2256
 0:0:0:0:0:0:0:1 - - [16/Apr/2018:20:22:14 +0900] "POST /EC/UserLoginAction.action HTTP/1.1" 200 2773
+127.0.0.1 - - [16/Apr/2018:21:15:58 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [16/Apr/2018:21:16:00 +0900] "GET /EC/ HTTP/1.1" 200 2944
+0:0:0:0:0:0:0:1 - - [16/Apr/2018:21:16:09 +0900] "POST /EC/CreatorAction.action;jsessionid=9EF670AD6BFE5215C93E09E31E4509B5 HTTP/1.1" 200 2283
+0:0:0:0:0:0:0:1 - - [16/Apr/2018:21:16:19 +0900] "POST /EC/CreatorLoginAction.action HTTP/1.1" 200 2856
+0:0:0:0:0:0:0:1 - - [16/Apr/2018:21:16:21 +0900] "POST /EC/CreatorAction.action HTTP/1.1" 200 2283
+0:0:0:0:0:0:0:1 - - [16/Apr/2018:21:16:30 +0900] "POST /EC/UserAction.action HTTP/1.1" 200 2256
+0:0:0:0:0:0:0:1 - - [16/Apr/2018:21:16:32 +0900] "GET /EC/UserCreateAction.action HTTP/1.1" 200 2424
+0:0:0:0:0:0:0:1 - - [16/Apr/2018:21:16:47 +0900] "POST /EC/UserCreateConfirmAction.action HTTP/1.1" 200 2330
+0:0:0:0:0:0:0:1 - - [16/Apr/2018:21:16:49 +0900] "POST /EC/UserCreateCompleteAction.action HTTP/1.1" 200 1548
+0:0:0:0:0:0:0:1 - - [16/Apr/2018:21:17:26 +0900] "GET /EC/UserAction.action HTTP/1.1" 200 2256
+0:0:0:0:0:0:0:1 - - [16/Apr/2018:21:17:44 +0900] "POST /EC/UserLoginAction.action HTTP/1.1" 200 2773
+0:0:0:0:0:0:0:1 - - [16/Apr/2018:21:17:47 +0900] "POST /EC/BuyItemAction.action HTTP/1.1" 200 9338

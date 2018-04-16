@@ -1,34 +1,36 @@
 package com.internousdev.ec.dto;
 
 public class CreateItemDTO {
+	private String itemName;
+	private String itemPrice;
+	private String itemStock;
+	private boolean itemFlg=false;
 
-	public int id;
-
-	public String itemName;
-
-	public String itemPrice;
-
-	public String getItemName() {
+	public String getItemName(){
 		return itemName;
 	}
-
-	public void setItemName(String itemName) {
-		this.itemName = itemName;
+	public void setItemName(String itemName){
+		this.itemName=itemName;
 	}
 
-	public String getItemPrice() {
+	public String getItemPrice(){
 		return itemPrice;
 	}
-
-	public void setItemPrice(String itemPrice) {
-		this.itemPrice = itemPrice;
+	public void setItemPrice(String itemPrice){
+		this.itemPrice=itemPrice;
 	}
 
-	public int getId() {
-		return id;
+	public String getItemStock(){
+		return itemStock;
+	}
+	public void setItemStock(String itemStock){
+		this.itemStock=itemStock;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public boolean getItemFlg(){
+		return itemFlg;
+	}
+	public void setItemFlg(boolean itemFlg){
+		this.itemFlg=itemFlg;
 	}
 }

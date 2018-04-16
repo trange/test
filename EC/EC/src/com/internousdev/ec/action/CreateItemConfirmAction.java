@@ -1,29 +1,58 @@
 package com.internousdev.ec.action;
 
-import java.sql.SQLException;
 import java.util.Map;
 
 import org.apache.struts2.interceptor.SessionAware;
 
-import com.internousdev.ec.dao.BuyItemCompleteDAO;
-import com.opensymphony.xwork2.ActionSupport;;
+import com.opensymphony.xwork2.ActionSupport;
 
-public class CreateItemConfirmAction extends ActionSupport implements SessionAware{
-	public Map<String, Object> session;
-	private String result;
-	private BuyItemCompleteDAO buyItemCompleteDAO=new BuyItemCompleteDAO();
-	public String execute() throws SQLException{
-		buyItemCompleteDAO.buyItemInfo(
-				session.get("id").toString(),
-				session.get("login_user_id").toString(),
-				session.get("buyItem_price").toString(),
-				session.get("stock").toString(),
-				session.get("pay").toString());
-		result=SUCCESS;
-		return result;
-	}
-	@Override
-	public void setSession(Map<String, Object> session){
-		this.session=session;
-	}
+public class CreateItemConfirmAction extends ActionSupport implements SessionAware {
+		private String loginUserId;
+		private String loginPassword;
+		private String userName;
+		public Map<String,Object> session;
+		private String errorMassage;
+
+		public String execute(){
+			String result=SUCCESS;
+			if(!(loginUserId.equals(""))
+					&& !(loginPassword.equals(""))
+					&& !(userName.equals(""))){
+					session.put("loginUserId", loginUserId);
+					session.put("loginPassword", loginPassword);
+					session.put("userName", userName);
+			}else{
+				setErrorMassage("未入力の項目があります。");
+				result=ERROR;
+			}
+			return result;
+		}
+		public String getLoginUserId(){
+			return loginUserId;
+		}
+		public void setLoginUserId(String loginUserId){
+			this.loginUserId=loginUserId;
+		}
+		public String getLoginPassword(){
+			return loginPassword;
+		}
+		public void setLoginPassword(String loginPassword){
+			this.loginPassword=loginPassword;
+		}
+		public String getUserName(){
+			return userName;
+		}
+		public void setUserName(String userName){
+			this.userName=userName;
+		}
+		@Override
+		public void setSession(Map<String, Object> session){
+			this.session=session;
+		}
+		public String getErrorMassage(){
+			return errorMassage;
+		}
+		public void setErrorMassage(String errorMassage){
+			this.errorMassage=errorMassage;
+		}
 }

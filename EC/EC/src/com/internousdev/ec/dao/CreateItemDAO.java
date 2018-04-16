@@ -12,15 +12,25 @@ public class CreateItemDAO {
 	private Connection connection=dbConnector.getConnection();
 	private CreateItemDTO createItemDTO=new CreateItemDTO();
 
-	public CreateItemDTO getItemInfo(){
-		String sql="SELECT id, item_name, item_price FROM item_info_transaction";
+	public CreateItemDTO getCreateItemInfo(String itemName, String itemPrice, String itemStock){
+		String sql="SELECT * FROM item_info_transaction where item_name = ? AND item_price = ? AND item_stock = ?";
 		try{
 			PreparedStatement preparedStatement=connection.prepareStatement(sql);
+
+			preparedStatement.setString(1, itemName);
+			preparedStatement.setString(2,  itemPrice);
+			preparedStatement.setString(3,  itemStock);
+
 			ResultSet resultSet=preparedStatement.executeQuery();
+
 			if(resultSet.next()){
-				createItemDTO.setId(resultSet.getInt("id"));
 				createItemDTO.setItemName(resultSet.getString("item_name"));
 				createItemDTO.setItemPrice(resultSet.getString("item_price"));
+				createItemDTO.setItemStock(resultSet.getString("item_stock"));
+
+				if(!(resultSet.getString("item_name").equals(null))){
+					createItemDTO.setItemFlg(true);
+				}
 			}
 		}catch(Exception e){
 			e.printStackTrace();
