@@ -4,32 +4,29 @@ import java.util.Map;
 
 import org.apache.struts2.interceptor.SessionAware;
 
-import com.internousdev.ec.dao.CreateItemDAO;
 import com.internousdev.ec.dao.CreatorLoginDAO;
-import com.internousdev.ec.dto.CreateItemDTO;
 import com.internousdev.ec.dto.CreatorLoginDTO;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class CreatorLoginAction extends ActionSupport implements SessionAware{
-	private String loginUserId;
-	private String loginPassword;
+	private String loginCreatorId;
+	private String loginCreatorPassword;
 	private String result;
 	public Map<String,Object> session;
 	private CreatorLoginDAO creatorLoginDAO=new CreatorLoginDAO();
 	private CreatorLoginDTO creatorLoginDTO=new CreatorLoginDTO();
-	private CreateItemDAO createItemDAO=new CreateItemDAO();
 
-	public String getLoginUserId(){
-		return loginUserId;
+	public String getLoginCreatorId(){
+		return loginCreatorId;
 	}
-	public void setLoginUserId(String loginUserId){
-		this.loginUserId=loginUserId;
+	public void setLoginCreatorId(String loginCreatorId){
+		this.loginCreatorId=loginCreatorId;
 	}
-	public String getLoginPassword(){
-		return loginPassword;
+	public String getLoginCreatorPassword(){
+		return loginCreatorPassword;
 	}
-	public void setLoginPassword(String loginPassword){
-		this.loginPassword=loginPassword;
+	public void setLoginCreatorPassword(String loginCreatorPassword){
+		this.loginCreatorPassword=loginCreatorPassword;
 	}
 
 	@Override
@@ -38,15 +35,11 @@ public class CreatorLoginAction extends ActionSupport implements SessionAware{
 	}
 	public String execute(){
 		result=ERROR;
-		creatorLoginDTO = creatorLoginDAO.getLoginUserInfo(loginUserId, loginPassword);
-		session.put("loginUser", creatorLoginDTO);
-		if(((CreatorLoginDTO) session.get("loginUser")).getLoginFlg()){
+		creatorLoginDTO = creatorLoginDAO.getLoginCreatorInfo(loginCreatorId, loginCreatorPassword);
+		session.put("loginCreator", creatorLoginDTO);
+		if(((CreatorLoginDTO) session.get("loginCreator")).getLoginCreatorFlg()){
 			result=SUCCESS;
-			CreateItemDTO createItemDTO=createItemDAO.getItemInfo();
-			session.put("login_user_id",creatorLoginDTO.getLoginId());
-			session.put("id",createItemDTO.getId());
-			session.put("buyItem_name",createItemDTO.getItemName());
-			session.put("buyItem_price",createItemDTO.getItemPrice());
+			session.put("login_user_id",creatorLoginDTO.getLoginCreatorId());
 
 			return result;
 		}

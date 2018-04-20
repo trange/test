@@ -12,23 +12,23 @@ public class CreatorLoginDAO {
 	private Connection connection=dbConnector.getConnection();
 	private CreatorLoginDTO creatorLoginDTO=new CreatorLoginDTO();
 
-	public CreatorLoginDTO getLoginUserInfo(String loginUserId, String loginPassword){
+	public CreatorLoginDTO getLoginCreatorInfo(String loginCreatorId, String loginCreatorPassword){
 		String sql="SELECT * FROM login_creator_transaction where login_id = ? AND login_pass = ?";
 		try{
 			PreparedStatement preparedStatement=connection.prepareStatement(sql);
 
-			preparedStatement.setString(1, loginUserId);
-			preparedStatement.setString(2,  loginPassword);
+			preparedStatement.setString(1, loginCreatorId);
+			preparedStatement.setString(2,  loginCreatorPassword);
 
 			ResultSet resultSet=preparedStatement.executeQuery();
 
 			if(resultSet.next()){
-				creatorLoginDTO.setLoginId(resultSet.getString("login_id"));
-				creatorLoginDTO.setLoginPassword(resultSet.getString("login_pass"));
-				creatorLoginDTO.setUserName(resultSet.getString("user_name"));
+				creatorLoginDTO.setLoginCreatorId(resultSet.getString("login_id"));
+				creatorLoginDTO.setLoginCreatorPassword(resultSet.getString("login_pass"));
+				creatorLoginDTO.setCreatorName(resultSet.getString("user_name"));
 
 				if(!(resultSet.getString("login_id").equals(null))){
-					creatorLoginDTO.setLoginFlg(true);
+					creatorLoginDTO.setLoginCreatorFlg(true);
 				}
 			}
 		}catch(Exception e){

@@ -86,8 +86,8 @@
 
 				<h3>商品を販売する際にはログインをお願いします。</h3>
 					<s:form action="CreatorLoginAction">
-						<s:textfield name="loginUserId"/>
-						<s:password name="loginPassword"/>
+						<s:textfield name="loginCreatorId"/>
+						<s:password name="loginCreatorPassword"/>
 						<s:submit value="ログイン"/>
 					</s:form>
 				<br/>

@@ -9,37 +9,37 @@ import com.internousdev.ec.dao.CreateItemCompleteDAO;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class CreateItemCompleteAction extends ActionSupport implements SessionAware{
-	private String loginUserId;
-	private String loginPassword;
-	private String userName;
+	private String itemName;
+	private String itemPrice;
+	private String itemStock;
 	public Map<String, Object> session;
 	private CreateItemCompleteDAO createItemCompleteDAO=new CreateItemCompleteDAO();
 
 	public String execute() throws SQLException{
-		createItemCompleteDAO.createItem(session.get("loginUserId").toString(),
-				session.get("loginPassword").toString(),
-				session.get("userName").toString());
+		createItemCompleteDAO.createItem(session.get("itemName").toString(),
+				session.get("itemPrice").toString(),
+				session.get("itemStock").toString());
 
 		String result=SUCCESS;
 		return result;
 	}
-	public String getLoginUserId(){
-		return loginUserId;
+	public String getItemName(){
+		return itemName;
 	}
-	public void setLoginUserId(String loginUserId){
-		this.loginUserId=loginUserId;
+	public void setItemName(String itemName){
+		this.itemName=itemName;
 	}
-	public String getLoginPassword(){
-		return loginPassword;
+	public String getItemPrice(){
+		return itemPrice;
 	}
-	public void setLoginPassword(String loginPassword){
-		this.loginPassword=loginPassword;
+	public void setItemPrice(String itemPrice){
+		this.itemPrice=itemPrice;
 	}
-	public String getUserName(){
-		return userName;
+	public String getItemStock(){
+		return itemStock;
 	}
-	public void setUserName(String userName){
-		this.userName=userName;
+	public void setItemStock(String itemStock){
+		this.itemStock=itemStock;
 	}
 	@Override
 	public void setSession(Map<String, Object> session){

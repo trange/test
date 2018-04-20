@@ -12,12 +12,12 @@ public class CreateItemCompleteDAO {
 	private Connection connection=dbConnector.getConnection();
 	private DateUtil dateUtil=new DateUtil();
 	private String sql="INSERT INTO item_info_transaction (item_name, item_price, item_stock, insert_date) VALUES(?, ?, ?, ?)";
-	public void createUser(String itemName, String itemPrice, String itemStock) throws SQLException{
+	public void createItem(String itemName, String itemPrice, String itemStock) throws SQLException{
 		try{
 			PreparedStatement preparedStatement=connection.prepareStatement(sql);
-			preparedStatement.setString(1, loginUserId);
-			preparedStatement.setString(2, loginUserPassword);
-			preparedStatement.setString(3, userName);
+			preparedStatement.setString(1, itemName);
+			preparedStatement.setString(2, itemPrice);
+			preparedStatement.setString(3, itemStock);
 			preparedStatement.setString(4, dateUtil.getDate());
 
 			preparedStatement.execute();

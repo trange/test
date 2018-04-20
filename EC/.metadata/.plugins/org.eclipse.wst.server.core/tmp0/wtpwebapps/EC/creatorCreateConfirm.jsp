@@ -67,13 +67,13 @@
 			<div>
 				<h3>登録する内容は以下でよろしいですか。</h3>
 				<table>
-					<s:form action="UserCreateCompleteAction">
+					<s:form action="CreatorCreateCompleteAction">
 						<tr id="box">
 							<td>
 								<label>ログインID:</label>
 							</td>
 							<td>
-								<s:property value="loginUserId" escape="false"/>
+								<s:property value="loginCreatorId" escape="false"/>
 							</td>
 						</tr>
 						<tr id="box">
@@ -81,7 +81,7 @@
 								<label>ログインPASS:</label>
 							</td>
 							<td>
-								<s:property value="loginPassword" escape="false"/>
+								<s:property value="loginCreatorPassword" escape="false"/>
 							</td>
 						</tr>
 						<tr id="box">
@@ -89,7 +89,7 @@
 								<label>クリエーター名:</label>
 							</td>
 							<td>
-								<s:property value="userName" escape="false"/>
+								<s:property value="creatorName" escape="false"/>
 							</td>
 						</tr>
 						<tr>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<!-- Strutsの詳細設定 -->
+
+<struts>
+	<constant name="struts.devMode" value="true"/>
+	<!-- 対象のpackageを設定 -->
+	<package name="com.internousdev.ec.action" extends="struts-default">
+
+		<!-- UserAction -->
+		<action name="UserAction" class="com.internousdev.ec.action.UserAction" method="execute">
+			<result name="success">userLogin.jsp</result>
+		</action>
+
+		<!-- CreatorAction -->
+		<action name="CreatorAction" class="com.internousdev.ec.action.CreatorAction" method="execute">
+			<result name="success">creatorLogin.jsp</result>
+		</action>
+
+		<!-- UserLoginAction -->
+		<action name="UserLoginAction" class="com.internousdev.ec.action.UserLoginAction" method="execute">
+			<result name="success">buyItem.jsp</result>
+			<result name="error">top.jsp</result>
+		</action>
+
+		<!-- CreatorLoginAction -->
+		<action name="CreatorLoginAction" class="com.internousdev.ec.action.CreatorLoginAction" method="execute">
+			<result name="success">createItem.jsp</result>
+			<result name="error">top.jsp</result>
+		</action>
+
+		<!-- UserCreateAction -->
+		<action name="UserCreateAction" class="com.internousdev.ec.action.UserCreateAction" method="execute">
+			<result name="success">userCreate.jsp</result>
+			<result name="back">userLogin.jsp</result>
+		</action>
+
+		<!--CreatorCreateAction -->
+		<action name="CreatorCreateAction" class="com.internousdev.ec.action.CreatorCreateAction" method="execute">
+			<result name="success">creatorCreate.jsp</result>
+			<result name="back">creatorLogin.jsp</result>
+		</action>
+
+		<!-- UserCreateConfirmAction -->
+		<action name="UserCreateConfirmAction" class="com.internousdev.ec.action.UserCreateConfirmAction" method="execute">
+			<result name="success">userCreateConfirm.jsp</result>
+			<result name="error">userCreate.jsp</result>
+		</action>
+
+		<!-- CreatorCreateConfirmAction -->
+		<action name="CreatorCreateConfirmAction" class="com.internousdev.ec.action.CreatorCreateConfirmAction" method="execute">
+			<result name="success">creatorCreateConfirm.jsp</result>
+			<result name="error">creatorCreate.jsp</result>
+		</action>
+
+		<!-- UserCreateCompleteAction -->
+		<action name="UserCreateCompleteAction" class="com.internousdev.ec.action.UserCreateCompleteAction" method="execute">
+			<result name="success">userCreateComplete.jsp</result>
+		</action>
+
+		<!-- CreatorCreateCompleteAction -->
+		<action name="CreatorCreateCompleteAction" class="com.internousdev.ec.action.CreatorCreateCompleteAction" method="execute">
+			<result name="success">creatorCreateComplete.jsp</result>
+		</action>
+
+		<!-- BuyItemAction -->
+		<action name="BuyItemAction" class="com.internousdev.ec.action.BuyItemAction" method="execute">
+			<result name="success">buyItemConfirm.jsp</result>
+			<result name="error">buyItem.jsp</result>
+		</action>
+
+		<!-- CreateItemAction -->
+		<action name="CreateItemAction" class="com.internousdev.ec.action.CreateItemAction" method="execute">
+			<result name="success">createItemConfirm.jsp</result>
+			<result name="error">createItem.jsp</result>
+		</action>
+
+		<!--  BuyItemConfirmAction -->
+		<action name="BuyItemConfirmAction" class="com.internousdev.ec.action.BuyItemConfirmAction" method="execute">
+			<result name="success">buyItemComplete.jsp</result>
+			<result name="back">buyItem.jsp</result>
+		</action>
+
+		<!--  CreateItemConfirmAction -->
+		<action name="CreateItemConfirmAction" class="com.internousdev.ec.action.CreateItemConfirmAction" method="execute">
+			<result name="success">createItemComplete.jsp</result>
+			<result name="back">createItem.jsp</result>
+		</action>
+
+		<!--  BuyItemCompleteAction -->
+		<action name="BuyItemCompleteAction" class="com.internousdev.ec.action.BuyItemCompleteAction" method="execute">
+			<result name="success">top.jsp</result>
+		</action>
+
+		<!--  CreateItemCompleteAction -->
+		<action name="CreateItemCompleteAction" class="com.internousdev.ec.action.CreateItemCompleteAction" method="execute">
+			<result name="success">top.jsp</result>
+		</action>
+
+		<!--  UserPageAction -->
+		<action name="UserPageAction" class="com.internousdev.ec.action.UserPageAction" method="execute">
+			<result name="success">userPage.jsp</result>
+		</action>
+
+		<!--  CreatorPageAction -->
+		<action name="CreatorPageAction" class="com.internousdev.ec.action.CreatorPageAction" method="execute">
+			<result name="success">creatorPage.jsp</result>
+		</action>
+
+		<!--  UserLogoutAction -->
+		<action name="UserLogoutAction" class="com.internousdev.ec.action.UserLogoutAction" method="execute">
+			<result name="success">top.jsp</result>
+		</action>
+
+		<!--  CreatorLogoutAction -->
+		<action name="CreatorLogoutAction" class="com.internousdev.ec.action.CreatorLogoutAction" method="execute">
+			<result name="success">top.jsp</result>
+		</action>
+
+	</package>
+</struts>

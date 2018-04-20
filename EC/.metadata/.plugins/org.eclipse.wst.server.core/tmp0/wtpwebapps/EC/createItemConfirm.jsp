@@ -61,34 +61,40 @@
 				<p>商品販売確認</p>
 			</div>
 			<div>
-				<s:form action="BuyItemConfirmAction">
+				<h3>登録する内容は以下でよろしいですか。</h3>
 				<table>
-					<tr>
-						<td>商品名</td>
-						<td><s:property value="session.buyItem_name"/></td>
-					</tr>
-					<tr>
-						<td>値段</td>
-						<td>
-							<s:property value="session.buyItem_price"/><span>円</span>
-						</td>
-					</tr>
-					<tr>
-						<td>購入個数</td>
-						<td>
-							<s:property value="session.stock"/>
-								<span>個</span>
-						</td>
-					</tr>
-					<tr>
-						<td>支払い方法</td>
-						<td><s:property value="session.pay"/></td>
-					</tr>
-					<tr>
-						<td><s:submit value="完了"/></td>
-					</tr>
+					<s:form action="CreateItemCompleteAction">
+						<tr id="box">
+							<td>
+								<label>商品名:</label>
+							</td>
+							<td>
+								<s:property value="itemName" escape="false"/>
+							</td>
+						</tr>
+						<tr id="box">
+							<td>
+								<label>価格:</label>
+							</td>
+							<td>
+								<s:property value="itemPrice" escape="false"/>
+							</td>
+						</tr>
+						<tr id="box">
+							<td>
+								<label>数量:</label>
+							</td>
+							<td>
+								<s:property value="itemStock" escape="false"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<s:submit value="完了"/>
+							</td>
+						</tr>
+					</s:form>
 				</table>
-				</s:form>
 			</div>
 		</div>
 		<div id="footer">

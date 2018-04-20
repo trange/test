@@ -9,37 +9,37 @@ import com.internousdev.ec.dao.CreatorCreateCompleteDAO;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class CreatorCreateCompleteAction extends ActionSupport implements SessionAware{
-	private String loginUserId;
-	private String loginPassword;
-	private String userName;
+	private String loginCreatorId;
+	private String loginCreatorPassword;
+	private String creatorName;
 	public Map<String, Object> session;
 	private CreatorCreateCompleteDAO creatorCreateCompleteDAO=new CreatorCreateCompleteDAO();
 
 	public String execute() throws SQLException{
-		creatorCreateCompleteDAO.createUser(session.get("loginUserId").toString(),
-				session.get("loginPassword").toString(),
-				session.get("userName").toString());
+		creatorCreateCompleteDAO.createCreator(session.get("loginCreatorId").toString(),
+				session.get("loginCreatorPassword").toString(),
+				session.get("creatorName").toString());
 
 		String result=SUCCESS;
 		return result;
 	}
-	public String getLoginUserId(){
-		return loginUserId;
+	public String getLoginCreatorId(){
+		return loginCreatorId;
 	}
-	public void setLoginUserId(String loginUserId){
-		this.loginUserId=loginUserId;
+	public void setLoginCreatorId(String loginCreatorId){
+		this.loginCreatorId=loginCreatorId;
 	}
-	public String getLoginPassword(){
-		return loginPassword;
+	public String getLoginCreatorPassword(){
+		return loginCreatorPassword;
 	}
-	public void setLoginPassword(String loginPassword){
-		this.loginPassword=loginPassword;
+	public void setLoginCreatorPassword(String loginCreatorPassword){
+		this.loginCreatorPassword=loginCreatorPassword;
 	}
-	public String getUserName(){
-		return userName;
+	public String getCreatorName(){
+		return creatorName;
 	}
-	public void setUserName(String userName){
-		this.userName=userName;
+	public void setCreatorName(String creatorName){
+		this.creatorName=creatorName;
 	}
 	@Override
 	public void setSession(Map<String, Object> session){

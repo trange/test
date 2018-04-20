@@ -1,36 +1,36 @@
 package com.internousdev.ec.dto;
 
 public class CreatorLoginDTO {
-	private String loginId;
-	private String loginPassword;
-	private String userName;
-	private boolean loginFlg=false;
+	private String loginCreatorId;
+	private String loginCreatorPassword;
+	private String creatorName;
+	private boolean loginCreatorFlg=false;
 
-	public String getLoginId(){
-		return loginId;
+	public String getLoginCreatorId(){
+		return loginCreatorId;
 	}
-	public void setLoginId(String loginId){
-		this.loginId=loginId;
-	}
-
-	public String getLoginPassword(){
-		return loginPassword;
-	}
-	public void setLoginPassword(String loginPassword){
-		this.loginPassword=loginPassword;
+	public void setLoginCreatorId(String loginCreatorId){
+		this.loginCreatorId=loginCreatorId;
 	}
 
-	public String getUserName(){
-		return userName;
+	public String getLoginCreatorPassword(){
+		return loginCreatorPassword;
 	}
-	public void setUserName(String userName){
-		this.userName=userName;
+	public void setLoginCreatorPassword(String loginCreatorPassword){
+		this.loginCreatorPassword=loginCreatorPassword;
 	}
 
-	public boolean getLoginFlg(){
-		return loginFlg;
+	public String getCreatorName(){
+		return creatorName;
 	}
-	public void setLoginFlg(boolean loginFlg){
-		this.loginFlg=loginFlg;
+	public void setCreatorName(String creatorName){
+		this.creatorName=creatorName;
+	}
+
+	public boolean getLoginCreatorFlg(){
+		return loginCreatorFlg;
+	}
+	public void setLoginCreatorFlg(boolean loginCreatorFlg){
+		this.loginCreatorFlg=loginCreatorFlg;
 	}
 }

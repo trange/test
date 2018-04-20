@@ -61,9 +61,9 @@
 				<p>商品販売完了</p>
 			</div>
 			<div>
-				<p>購入手続きが完了致しました。</p>
+				<h3>商品の登録が完了致しました。</h3>
 				<div>
-					<a href='<s:url action="CreatorPageAction"/>'>マイページ</a><span>から購入履歴の確認が可能です。</span>
+					<a href='<s:url action="CreatorAction"/>'>ログインへ</a>
 				</div>
 			</div>
 		</div>

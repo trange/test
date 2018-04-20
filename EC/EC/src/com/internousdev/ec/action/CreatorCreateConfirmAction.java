@@ -7,43 +7,43 @@ import org.apache.struts2.interceptor.SessionAware;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class CreatorCreateConfirmAction extends ActionSupport implements SessionAware {
-		private String loginUserId;
-		private String loginPassword;
-		private String userName;
+		private String loginCreatorId;
+		private String loginCreatorPassword;
+		private String creatorName;
 		public Map<String,Object> session;
 		private String errorMassage;
 
 		public String execute(){
 			String result=SUCCESS;
-			if(!(loginUserId.equals(""))
-					&& !(loginPassword.equals(""))
-					&& !(userName.equals(""))){
-					session.put("loginUserId", loginUserId);
-					session.put("loginPassword", loginPassword);
-					session.put("userName", userName);
+			if(!(loginCreatorId.equals(""))
+					&& !(loginCreatorPassword.equals(""))
+					&& !(creatorName.equals(""))){
+					session.put("loginCreatorId", loginCreatorId);
+					session.put("loginCreatorPassword", loginCreatorPassword);
+					session.put("creatorName", creatorName);
 			}else{
 				setErrorMassage("未入力の項目があります。");
 				result=ERROR;
 			}
 			return result;
 		}
-		public String getLoginUserId(){
-			return loginUserId;
+		public String getLoginCreatorId(){
+			return loginCreatorId;
 		}
-		public void setLoginUserId(String loginUserId){
-			this.loginUserId=loginUserId;
+		public void setLoginCreatorId(String loginCreatorId){
+			this.loginCreatorId=loginCreatorId;
 		}
-		public String getLoginPassword(){
-			return loginPassword;
+		public String getLoginCreatorPassword(){
+			return loginCreatorPassword;
 		}
-		public void setLoginPassword(String loginPassword){
-			this.loginPassword=loginPassword;
+		public void setLoginCreatorPassword(String loginCreatorPassword){
+			this.loginCreatorPassword=loginCreatorPassword;
 		}
-		public String getUserName(){
-			return userName;
+		public String getCreatorName(){
+			return creatorName;
 		}
-		public void setUserName(String userName){
-			this.userName=userName;
+		public void setCreatorName(String creatorName){
+			this.creatorName=creatorName;
 		}
 		@Override
 		public void setSession(Map<String, Object> session){

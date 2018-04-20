@@ -64,7 +64,7 @@
 			<div>
 				<h3>クリエーターの登録が完了致しました。</h3>
 				<div>
-					<a href='<s:url action="UserAction"/>'>ログインへ</a>
+					<a href='<s:url action="CreatorAction"/>'>ログインへ</a>
 				</div>
 			</div>
 		</div>

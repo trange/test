@@ -7,43 +7,43 @@ import org.apache.struts2.interceptor.SessionAware;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class CreateItemConfirmAction extends ActionSupport implements SessionAware {
-		private String loginUserId;
-		private String loginPassword;
-		private String userName;
+		private String itemName;
+		private String itemPrice;
+		private String itemStock;
 		public Map<String,Object> session;
 		private String errorMassage;
 
 		public String execute(){
 			String result=SUCCESS;
-			if(!(loginUserId.equals(""))
-					&& !(loginPassword.equals(""))
-					&& !(userName.equals(""))){
-					session.put("loginUserId", loginUserId);
-					session.put("loginPassword", loginPassword);
-					session.put("userName", userName);
+			if(!(itemName.equals(""))
+					&& !(itemPrice.equals(""))
+					&& !(itemStock.equals(""))){
+					session.put("itemName", itemName);
+					session.put("itemPrice", itemPrice);
+					session.put("itemStock", itemStock);
 			}else{
 				setErrorMassage("未入力の項目があります。");
 				result=ERROR;
 			}
 			return result;
 		}
-		public String getLoginUserId(){
-			return loginUserId;
+		public String getItemName(){
+			return itemName;
 		}
-		public void setLoginUserId(String loginUserId){
-			this.loginUserId=loginUserId;
+		public void setItemName(String itemName){
+			this.itemName=itemName;
 		}
-		public String getLoginPassword(){
-			return loginPassword;
+		public String getItemPrice(){
+			return itemPrice;
 		}
-		public void setLoginPassword(String loginPassword){
-			this.loginPassword=loginPassword;
+		public void setItemPrice(String itemPrice){
+			this.itemPrice=itemPrice;
 		}
-		public String getUserName(){
-			return userName;
+		public String getItemStock(){
+			return itemStock;
 		}
-		public void setUserName(String userName){
-			this.userName=userName;
+		public void setItemStock(String itemStock){
+			this.itemStock=itemStock;
 		}
 		@Override
 		public void setSession(Map<String, Object> session){

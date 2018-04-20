@@ -73,8 +73,8 @@
 
 		<!-- CreateItemAction -->
 		<action name="CreateItemAction" class="com.internousdev.ec.action.CreateItemAction" method="execute">
-			<result name="success">createItemConfirm.jsp</result>
-			<result name="error">createItem.jsp</result>
+			<result name="success">createItem.jsp</result>
+			<result name="back">creatorLogin.jsp</result>
 		</action>
 
 		<!--  BuyItemConfirmAction -->
@@ -85,8 +85,8 @@
 
 		<!--  CreateItemConfirmAction -->
 		<action name="CreateItemConfirmAction" class="com.internousdev.ec.action.CreateItemConfirmAction" method="execute">
-			<result name="success">createItemComplete.jsp</result>
-			<result name="back">createItem.jsp</result>
+			<result name="success">createItemConfirm.jsp</result>
+			<result name="error">createItem.jsp</result>
 		</action>
 
 		<!--  BuyItemCompleteAction -->

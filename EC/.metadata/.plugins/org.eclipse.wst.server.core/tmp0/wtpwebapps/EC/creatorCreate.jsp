@@ -67,13 +67,13 @@
 					<s:property value="errorMassage" escape="false"/>
 				</s:if>
 				<table>
-					<s:form action="UserCreateConfirmAction">
+					<s:form action="CreatorCreateConfirmAction">
 						<tr>
 							<td>
 								<label>ログインID:</label>
 							</td>
 							<td>
-								<input type="text" name="loginUserId" value=""/>
+								<input type="text" name="loginCreatorId" value=""/>
 							</td>
 						</tr>
 						<tr>
@@ -81,7 +81,7 @@
 								<label>ログインPASS:</label>
 							</td>
 							<td>
-								<input type="text" name="loginPassword" value=""/>
+								<input type="text" name="loginCreatorPassword" value=""/>
 							</td>
 						</tr>
 						<tr>
@@ -89,7 +89,7 @@
 								<label>クリエーター名:</label>
 							</td>
 							<td>
-								<input type="text" name="userName" value=""/>
+								<input type="text" name="creatorName" value=""/>
 							</td>
 						</tr>
 						<s:submit value="登録"/>
