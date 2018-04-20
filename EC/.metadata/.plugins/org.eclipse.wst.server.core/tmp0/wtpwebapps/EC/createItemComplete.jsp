@@ -63,7 +63,7 @@
 			<div>
 				<h3>商品の登録が完了致しました。</h3>
 				<div>
-					<a href='<s:url action="CreatorAction"/>'>ログインへ</a>
+					<a href='<s:url action="CreaterPageAction"/>'>マイページ</a><span>から販売履歴の確認が可能です。</span>
 				</div>
 			</div>
 		</div>
