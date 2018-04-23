@@ -53,8 +53,7 @@
 			clear: both;
 		}
 		#button {
-			width: 100%;
-			margin: auto;
+			arign: center;
 		}
 
 		</style>

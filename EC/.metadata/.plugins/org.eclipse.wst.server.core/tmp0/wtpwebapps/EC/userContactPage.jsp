@@ -31,8 +31,31 @@
 
 
 		/* ========ID LAYOUT======== */
-
-
+		#top {
+			width: 780px;
+			margin: 30px auto;
+			border: 1px solid #333;
+		}
+		#header {
+			width:100%;
+			height: 80px;
+			background-color: black;
+		}
+		#main {
+			width:100%;
+			height: 500px;
+			text-align: center;
+		}
+		#footer {
+			width: 100%;
+			height: 80px;
+			background-color: black;
+			clear: both;
+		}
+		#button {
+			width: 100%;
+			margin: auto;
+		}
 
 		</style>
 
@@ -75,7 +98,9 @@
 						<h2>お問い合わせ内容</h2>
 							<input type="text" name="contect" value=""/>
 
-						<s:submit value="送信"/>
+						<div id = "button">
+							<s:submit value="送信"/>
+						</div>
 
 					</s:form>
 

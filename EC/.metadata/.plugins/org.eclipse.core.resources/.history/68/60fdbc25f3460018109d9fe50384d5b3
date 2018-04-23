@@ -52,10 +52,6 @@
 			background-color: black;
 			clear: both;
 		}
-		#button {
-			width: 100%;
-			margin: auto;
-		}
 
 		</style>
 

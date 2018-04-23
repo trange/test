@@ -52,10 +52,6 @@
 			background-color: black;
 			clear: both;
 		}
-		#button {
-			width: 100%;
-			margin: auto;
-		}
 
 		</style>
 
@@ -98,9 +94,7 @@
 						<h2>お問い合わせ内容</h2>
 							<input type="text" name="contect" value=""/>
 
-						<div id = "button">
-							<s:submit value="送信"/>
-						</div>
+						<s:submit value="送信"/>
 
 					</s:form>
 
