@@ -87,7 +87,7 @@
 							<td><s:property value="session.total_payment"/></td>
 						</tr>
 					</table>
-					<s:form action="MyPageAction">
+					<s:form action="UserPageAction">
 						<input type="hidden" name="deleteFlg" value="1">
 						<s:submit value="削除" method="delete"/>
 					</s:form>

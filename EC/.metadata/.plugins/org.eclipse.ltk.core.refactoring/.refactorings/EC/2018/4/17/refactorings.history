@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="リソース名 &apos;EC/WebContent/contactPage.jsp&apos; を &apos;userContactPage.jsp&apos; に変更します" description="リソース &apos;contactPage.jsp&apos; の名前変更" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/contactPage.jsp" name="userContactPage.jsp" stamp="1524485720803" updateReferences="true"/>
+</session>
