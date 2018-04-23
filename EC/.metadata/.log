@@ -5962,3 +5962,6 @@ Binding(ALT+CTRL+SPACE,
 
 !ENTRY org.eclipse.jst.server.tomcat.core 4 0 2018-04-23 20:24:05.182
 !MESSAGE EC で必要な幾つかのポート (8005, 8080, 8009) がすでに使用中です。サーバーはすでに別のプロセスで稼働中であるか、システム・プロセスがそのポートを使用中である可能性があります。このサーバーを始動するには、他のプロセスを停止するか、ポート番号を変更する必要があります。
+
+!ENTRY org.eclipse.ui 2 2 2018-04-23 21:40:13.711
+!MESSAGE Invalid preference category path: org.nodeclipse.enide.gradle.preferences.GradlePreferencePage (bundle: org.nodeclipse.enide.editors.gradle, page: org.nodeclipse.enide.editors.gradle.preferences.GradleEditorPreferencePage)
