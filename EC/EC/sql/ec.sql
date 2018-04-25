@@ -63,3 +63,24 @@ pay varchar(30),
 insert_date datetime,
 delete_date datetime
 );
+
+drop table if exists user_contact_transaction;
+
+create table user_contact_transaction(
+id int not null primary key auto_increment,
+user_id varchar(30),
+user_mell varchar(30),
+user_contact varchar(255),
+insert_date datetime,
+update_date datetime
+);
+drop table if exists creator_contact_transaction;
+
+create table creator_contact_transaction(
+id int not null primary key auto_increment,
+creator_id varchar(30),
+creator_mell varchar(30),
+creator_contact varchar(255),
+insert_date datetime,
+update_date datetime
+);

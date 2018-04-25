@@ -1,0 +1,37 @@
+package com.internousdev.ec.dto;
+
+public class CreatorContactDTO {
+
+	private String creatorId;
+	private String creatorMellAdd;
+	private String creatorContact;
+	private boolean creatorContactFlg=false;
+
+	public String getCreatorId(){
+		return creatorId;
+	}
+	public void setCreatorId(String creatorId){
+		this.creatorId=creatorId;
+	}
+
+	public String getCreatorMellAdd(){
+		return creatorMellAdd;
+	}
+	public void setCreatorMellAdd(String creatorMellAdd){
+		this.creatorMellAdd=creatorMellAdd;
+	}
+
+	public String getCreatorContact(){
+		return creatorContact;
+	}
+	public void setCreatorContact(String creatorContact){
+		this.creatorContact=creatorContact;
+	}
+
+	public boolean getCreatorContactFlg(){
+		return creatorContactFlg;
+	}
+	public void setCreatorContactFlg(boolean creatorContactFlg){
+		this.creatorContactFlg=creatorContactFlg;
+	}
+}
