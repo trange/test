@@ -100,7 +100,7 @@
 							</td>
 
 							<td>
-								<input type="text" name="userMellAdd" value=""/>
+								<input type="text" name="userMell" value=""/>
 							</td>
 
 						</tr>

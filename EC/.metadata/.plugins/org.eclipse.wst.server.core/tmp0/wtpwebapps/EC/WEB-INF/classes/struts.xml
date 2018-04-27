@@ -119,5 +119,40 @@
 			<result name="success">top.jsp</result>
 		</action>
 
+		<!-- UserContactAction -->
+		<action name="UserContactAction" class="com.internousdev.ec.action.UserContactAction" method="execute">
+			<result name="success">userContact.jsp</result>
+			<result name="back">userLogin.jsp</result>
+		</action>
+
+		<!-- CreatorContactAction -->
+		<action name="CreatorContactAction" class="com.internousdev.ec.action.CreatorContactAction" method="execute">
+			<result name="success">creatorContact.jsp</result>
+			<result name="back">creatorLogin.jsp</result>
+		</action>
+
+		<!--  UserContactConfirmAction -->
+		<action name="UserContactConfirmAction" class="com.internousdev.ec.action.UserContactConfirmAction" method="execute">
+			<result name="success">userContactConfirm.jsp</result>
+			<result name="error">userContact.jsp</result>
+		</action>
+
+		<!--  CreatorContactConfirmAction -->
+		<action name="CreatorContactConfirmAction" class="com.internousdev.ec.action.CreatorContactConfirmAction" method="execute">
+			<result name="success">creatorContactConfirm.jsp</result>
+			<result name="error">creatorContact.jsp</result>
+		</action>
+
+		<!--  UserContactCompleteAction -->
+		<action name="UserContactCompleteAction" class="com.internousdev.ec.action.UserContactCompleteAction" method="execute">
+			<result name="success">userContactComplete.jsp</result>
+		</action>
+
+		<!--  CreatorContactCompleteAction -->
+		<action name="CreatorContactCompleteAction" class="com.internousdev.ec.action.CreatorContactCompleteAction" method="execute">
+			<result name="success">creatorContactComplete.jsp</result>
+		</action>
+
+
 	</package>
 </struts>
