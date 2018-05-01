@@ -9,7 +9,7 @@
 		<meta http-equiv="imagetoolbar" content="no"/>
 		<meta name="description" content=""/>
 		<meta name="keywords" content=""/>
-		<title>buyItem画面</title>
+		<title>BuyItem画面</title>
 
 		<style type="text/css">
 		/* ========TAG LAYOUT======== */
@@ -68,7 +68,7 @@
 								<span>商品名</span>
 							</td>
 							<td>
-								<s:property value="session.buyItem_name"/>
+								<s:property value="session.buyItem_name"/><br>
 							</td>
 						</tr>
 						<tr>

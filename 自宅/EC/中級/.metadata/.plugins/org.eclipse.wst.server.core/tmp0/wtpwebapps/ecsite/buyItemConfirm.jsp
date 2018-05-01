@@ -9,7 +9,8 @@
 		<meta http-equiv="imagetoolbar" content="no"/>
 		<meta name="description" content=""/>
 		<meta name="keywords" content=""/>
-		<title>buyItemConfirm画面</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<title>BuyItemConfirm画面</title>
 
 		<style type="text/css">
 		/* ========TAG LAYOUT======== */
@@ -75,13 +76,13 @@
 					<tr>
 						<td>値段</td>
 						<td>
-							<s:property value="session.buyItem_price"/><span>円</span>
+							<s:property value="session.total_price"/><span>円</span>
 						</td>
 					</tr>
 					<tr>
 						<td>購入個数</td>
 						<td>
-							<s:property value="session.stock"/>
+							<s:property value="session.count"/>
 								<span>個</span>
 						</td>
 					</tr>
@@ -101,7 +102,7 @@
 		</div>
 		<div>
 					<p>前画面に戻る場合は<a href='<s:url action="GoHomeAction"/>'>こちら</a></p>
-					<p>gマイページは<a href='<s:url action="MyPageAction"/>'>こちら</a></p>
+					<p>マイページは<a href='<s:url action="MyPageAction"/>'>こちら</a></p>
 				</div>
 		<div id="footer">
 			<div id="pr">

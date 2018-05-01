@@ -5,7 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 import com.internousdev.ecsite.util.DBConnector;
-import com.internousdev.ecsite.util.DateUtil;;
+import com.internousdev.ecsite.util.DateUtil;
 
 public class BuyItemCompleteDAO {
 	private DBConnector dbConnector=new DBConnector();
