@@ -1,0 +1,5 @@
+package com.internousdev.yataberyouhin.util;
+
+public class DBConnector {
+
+}
