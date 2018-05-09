@@ -1,0 +1,8 @@
+127.0.0.1 - - [14/Mar/2018:20:41:47 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [14/Mar/2018:20:41:50 +0900] "GET /WebProj3/ HTTP/1.1" 200 430
+0:0:0:0:0:0:0:1 - - [14/Mar/2018:20:41:52 +0900] "POST /WebProj3/HelloStrutsAction.action HTTP/1.1" 200 226
+127.0.0.1 - - [14/Mar/2018:21:42:07 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [14/Mar/2018:21:42:09 +0900] "GET /WebProj3/ HTTP/1.1" 200 714
+0:0:0:0:0:0:0:1 - - [14/Mar/2018:21:42:12 +0900] "POST /WebProj3/WelcomeAction.action HTTP/1.1" 200 869
+0:0:0:0:0:0:0:1 - - [14/Mar/2018:21:42:21 +0900] "POST /WebProj3/LoginAction.action HTTP/1.1" 200 156
+0:0:0:0:0:0:0:1 - - [14/Mar/2018:21:42:25 +0900] "POST /WebProj3/LoginAction.action HTTP/1.1" 200 219
