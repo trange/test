@@ -1,3 +1,0 @@
-127.0.0.1 - - [27/Apr/2018:18:51:41 +0900] "GET / HTTP/1.1" 404 1019
-0:0:0:0:0:0:0:1 - - [27/Apr/2018:18:51:45 +0900] "GET /EC/creatorContact.jsp HTTP/1.1" 200 3168
-0:0:0:0:0:0:0:1 - - [27/Apr/2018:18:52:03 +0900] "POST /EC/CreatorContactAction.action;jsessionid=C03086CED14DD13E663656802972F41A HTTP/1.1" 200 3080

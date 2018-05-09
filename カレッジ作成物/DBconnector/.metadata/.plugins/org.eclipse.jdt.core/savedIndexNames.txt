@@ -1,3 +1,0 @@
-INDEX VERSION 1.127+C:\Users\testuser\Desktop\workspace\workspace-takahashi\test\DBconnector\.metadata\.plugins\org.eclipse.jdt.core
-2573306658.index
-3475807842.index
