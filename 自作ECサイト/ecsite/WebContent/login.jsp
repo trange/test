@@ -63,6 +63,7 @@
 			display: inline-block;
 			text-align: right;
 		}
+
 	</style>
 </head>
 <body>
