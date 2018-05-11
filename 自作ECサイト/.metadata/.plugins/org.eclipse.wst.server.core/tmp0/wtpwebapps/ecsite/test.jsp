@@ -14,19 +14,21 @@
 		<meta http-equiv="imagetoolbar" content="no" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
+		<meta charset="utf-8">
 
-		<title>Home画面</title>
+		<title>UserCreate画面</title>
 
 		<style type="text/css">
+
 			body {
-			   margin:0;
-			   padding:0;
-			   line-height:1.6;
-			   letter-spacing:1px;
-			   font-family:Verdana, Helvetica, sans-serif;
-			   font-size:12px;
-			   color:#333;
-			   background:#fff;
+				margin:0;
+				padding:0;
+				line-height:1.6;
+				letter-spacing:1px;
+				font-family:Verdana, Helvetica, sans-serif;
+				font-size:12px;
+				color:#333;
+				background:#fff;
 			}
 
 			table {
@@ -34,23 +36,22 @@
 				margin:0 auto;
 			}
 
-			/* ========TEMPLATE LAYOUT======== */
 			#top {
-			   width:780px;
-			   margin:30px auto;
-			   border:1px solid #333;
+				width:780px;
+				margin:30px auto;
+				border:1px solid #333;
 			}
 
 			#header {
-			   width: 100%;
-			   height: 80px;
-			   background-color: black;
+				width: 100%;
+				height: 80px;
+				background-color: black;
 			}
 
 			#main {
-			   width: 100%;
-			   height: 500px;
-			   text-align: center;
+				width: 100%;
+				height: 800px;
+				text-align: center;
 			}
 
 			#footer {
@@ -58,99 +59,196 @@
 				height: 80px;
 				background-color: black;
 				clear:both;
-				font-color: white;
 			}
-
-			#text-center {
-				margin: left;
-			}
-
-			input.user {
-				position: relative;
-				display: inline-block;
-				padding: 5em 5em;
-				text-decoration: none;
-				color: #FFF;
-				background: #fd9535;/*背景色*/
-				border-bottom: solid 2px #d27d00;/*少し濃い目の色に*/
-				border-radius: 4px;/*角の丸み*/
-				box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
-				font-weight: bold;
-			}
-
-			input.user:active {
-				border-bottom: solid 2px #fd9535;
-				box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
-			}
-
-			input.creator {
-				position: relative;
-				display: inline-block;
-				padding: 5em 5em;
-				text-decoration: none;
-				color: #FFF;
-				background: green;/*背景色*/
-				border-bottom: solid 2px #d27d00;/*少し濃い目の色に*/
-				border-radius: 4px;/*角の丸み*/
-				box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
-				font-weight: bold;
-			}
-
-			input.creator:active {
-				border-bottom: solid 2px #fd9535;
-				box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
-			}
-
 		</style>
 
 	</head>
 
-
 	<body>
 
+		<!-- ヘッダー -->
 		<div id="header">
-
 		 	<div id="pr">
 			</div>
-
 		</div>
 
 		<div id="main">
 
+			<!-- 見出し -->
 			<div id="top">
-
-				<p>Home</p>
-
+				<p>UserCreate</p>
 			</div>
 
+			<div>
 
-			<div id="text-center">
-
-				<s:form action="HomeAction">
-					<input class="user" type="submit" value="ユーザーログイン"/>
-				</s:form>
-
-				<s:form action="HomeAction">
-					<input class="creator" type="submit" value="クリエーターログイン"/>
-				</s:form>
-
-				<s:if test="#session.id != null">
-					<p>ログアウトする場合は<a href='<s:url action="LogoutAction" />'>こちら</a></p>
+				<!-- 未入力項目があった場合のエラー -->
+				<s:if test="errorMassage != ''">
+					<h3><s:property value="errorMassage" escape="false" /></h3>
 				</s:if>
 
-				<s:if test="#session.masterId != null">
-					<a href='<s:url action="LogoutAction"/>'>ログアウト</a>
-				</s:if>
+				<!-- 登録内容入力 -->
+				<table>
+
+					<s:form action="UserCreateConfirmAction">
+
+						<!-- メールアドレス入力 -->
+						<tr>
+							<td>
+								<label>ログインID (メールアドレス):</label>
+							</td>
+							<td>
+								<input type="text" name="loginUserId" placeholder="○○○@○○○" />
+							</td>
+						</tr>
+
+						<!-- メールアドレス入力(確認) -->
+						<tr>
+							<td>
+								<label>確認用：</label>
+							</td>
+							<td>
+								<input type="text" name="checkLoginId" placeholder="○○○@○○○" />
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<br>
+							</td>
+						</tr>
+
+						<!-- パスワード入力 -->
+						<tr>
+							<td>
+								<label>ログインPASS (パスワード):</label>
+							</td>
+							<td>
+								<input type="password" name="loginPassword" placeholder="8文字以上16文字以下" />
+							</td>
+						</tr>
+
+						<!-- パスワード入力(確認) -->
+						<tr>
+							<td>
+								<label>確認用：</label>
+							</td>
+							<td>
+								<input type="password" name="checkPassword" placeholder="8文字以上16文字以下" />
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<br>
+							</td>
+						</tr>
+
+						<!-- ユーザー名入力 -->
+						<tr>
+							<td>
+								<label>ユーザー名 (氏名):</label>
+							</td>
+							<td>
+								<input type="text" name="userName" placeholder="山田太郎" />
+							</td>
+						</tr>
+
+						<!-- 性別選択 -->
+						<tr>
+							<td>
+								<label>性別：</label>
+							</td>
+							<td>
+								<input type="radio" name="sex" value="男" checked="checked">男
+								<input type="radio" name="sex" value="女">女
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<br>
+							</td>
+						</tr>
+
+						<!-- 住所入力項目 -->
+						<tr>
+							<td>
+								<label>住所</label>
+							</td>
+						</tr>
+
+						<!-- 都道府県入力 -->
+						<tr>
+							<td>
+								<label>都道府県：</label>
+							</td>
+							<td>
+								<input type="text" name="userAddress1" placeholder="○○都/道/府/県" />
+							</td>
+						</tr>
+
+						<!-- 市町村入力 -->
+						<tr>
+							<td>
+								<label>市町村：</label>
+							</td>
+							<td>
+								<input type="text" name="userAddress2" placeholder="○○市/町/村" />
+							</td>
+						</tr>
+
+						<!-- 詳細入力 -->
+						<tr>
+							<td>
+								<label>番地、マンション名：</label>
+							</td>
+							<td>
+								<input type="text" name="userAddress3" placeholder="0-0-0　～団地　0-000号室" />
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<br>
+							</td>
+						</tr>
+
+						<!-- 電話番号入力 -->
+						<tr>
+							<td>
+								<label>携帯番号：</label>
+							</td>
+							<td>
+								<input type="text" name="tell" placeholder="000-0000-0000" />
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<br>
+							</td>
+						</tr>
+
+						<!-- 登録ボタン -->
+						<s:submit value="登録"/>
+
+					</s:form>
+
+				</table>
+
+				<!-- HOMEに戻る -->
+				<div>
+					<span>前画面に戻る場合は</span><a href='<s:url action="HomeAction" />'>こちら</a>
+				</div>
 
 			</div>
 
 		</div>
 
+		<!-- フッター -->
 		<div id="footer">
-
-		 	<div id="pr">
+			<div id="pr">
 			</div>
-
 		</div>
 
 	</body>

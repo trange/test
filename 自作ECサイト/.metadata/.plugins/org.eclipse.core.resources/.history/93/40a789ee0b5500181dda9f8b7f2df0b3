@@ -1,0 +1,205 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="s" uri="/struts-tags"%>
+
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript" />
+		<meta http-equiv="imagetoolbar" content="no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+
+		<title>Home画面</title>
+
+		<style type="text/css">
+			body {
+			   margin:0;
+			   padding:0;
+			   line-height:1.6;
+			   letter-spacing:1px;
+			   font-family:Verdana, Helvetica, sans-serif;
+			   font-size:12px;
+			   color:#333;
+			   background:#fff;
+			}
+
+			table {
+				text-align:center;
+				margin:0 auto;
+			}
+
+			/* ========TEMPLATE LAYOUT======== */
+			#top {
+			   width:780px;
+			   margin:30px auto;
+			   border:1px solid #333;
+			   text-align: center;
+			}
+
+			#header {
+			   width: 100%;
+			   height: 80px;
+			   background-color: black;
+			}
+
+			#main {
+				width: 100%;
+			}
+
+			#footer {
+				clear: left;
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				height: 80px;
+				background-color: black;
+				font-color: white;
+			}
+
+			input.user {
+				display       : inline-block;
+				border-radius : 5%;          /* 角丸       */
+				font-size     : 30pt;        /* 文字サイズ */
+				text-align    : center;      /* 文字位置   */
+				cursor        : pointer;     /* カーソル   */
+				padding       : 100px 35px;   /* 余白       */
+				background    : #ff7f00;     /* 背景色     */
+				color         : #ffffff;     /* 文字色     */
+				line-height   : 1em;         /* 1行の高さ  */
+				transition    : .3s;         /* なめらか変化 */
+				box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+				border        : 2px solid #ff7f00;    /* 枠の指定 */
+			}
+			input.user:hover {
+				box-shadow    : none;        /* カーソル時の影消去 */
+				color         : #ff7f00;     /* 背景色     */
+				background    : #ffffff;     /* 文字色     */
+			}
+
+
+			input.creator {
+				display       : inline-block;
+				border-radius : 5%;          /* 角丸       */
+				font-size     : 30pt;        /* 文字サイズ */
+				text-align    : center;      /* 文字位置   */
+				cursor        : pointer;     /* カーソル   */
+				padding       : 100px 15px;   /* 余白       */
+				background    : #59b300;     /* 背景色     */
+				color         : #ffffff;     /* 文字色     */
+				line-height   : 1em;         /* 1行の高さ  */
+				transition    : .3s;         /* なめらか変化 */
+				box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+				border        : 2px solid #59b300;    /* 枠の指定 */
+			}
+
+			input.creator:hover {
+				box-shadow    : none;        /* カーソル時の影消去 */
+				color         : #59b300;     /* 背景色     */
+				background    : #ffffff;     /* 文字色     */
+			}
+
+
+			input.Logout {
+				display       : inline-block;
+				border-radius : 5%;          /* 角丸       */
+				font-size     : 18pt;        /* 文字サイズ */
+				text-align    : center;      /* 文字位置   */
+				cursor        : pointer;     /* カーソル   */
+				padding       : 10px 10px;   /* 余白       */
+				background    : #999999;     /* 背景色     */
+				color         : #ffffff;     /* 文字色     */
+				line-height   : 1em;         /* 1行の高さ  */
+				transition    : .3s;         /* なめらか変化 */
+			}
+
+			#User {
+				float: left;
+				width: 50%;
+				padding-bottom: 40px;
+				text-align: center;
+			}
+			#Creator {
+				float: right;
+				width: 50%;
+				padding-bottom: 40px;
+				text-align: center;
+			}
+
+			#Logout {
+				float: right;
+				padding-top: 15px;
+				padding-right: 10px;
+			}
+
+		</style>
+
+	</head>
+
+
+	<body>
+
+		<!-- ヘッダーの設定 -->
+		<div id = "header">
+
+			<!-- ログアウトボタンの設定 -->
+			<div id="Logout">
+
+				<!-- ユーザーのログアウト -->
+				<s:form action="LogoutAction">
+					<s:if test="#session.id != null">
+						<input class="Logout" type="submit" value="ログアウト"/>
+					</s:if>
+				</s:form>
+
+				<!-- クリエーターのログアウト -->
+				<s:form action="LogoutAction">
+					<s:if test="#session.masterId != null">
+						<input class="Logout" type="submit" value="ログアウト"/>
+					</s:if>
+				</s:form>
+
+			</div>
+
+
+		</div>
+
+		<div id ="main">
+
+			<div id="top">
+
+				<h1>TOP</h1>
+
+			</div>
+
+
+			<div id="User">
+				<s:form action="HomeAction">
+					<input class="user" type="submit" value="ユーザーログイン"/>
+				</s:form>
+			</div>
+
+			<div id="Creator">
+				<s:form action="HomeAction">
+					<input class="creator" type="submit" value="クリエーターログイン"/>
+				</s:form>
+			</div>
+
+
+		</div>
+
+		<div id="footer">
+
+		 	<div id="pr">
+			</div>
+
+		</div>
+
+	</body>
+
+</html>
